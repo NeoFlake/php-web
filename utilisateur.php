@@ -2,7 +2,7 @@
 
     $username = $_GET["username"];
     $genre = $_GET["genre"];
-     $age = $_GET["age"];
+    $age = $_GET["age"];
     $ville = $_GET["ville"];
     $genre = $_GET["genre"];
 
@@ -25,7 +25,7 @@
             } else if($genre == "femme"){
                 echo "Madame";
             }
-            echo " $username , vous êtes un(e) $genre de $age ans de $ville";
+            echo " $username , vous êtes un(e) $genre de $age ans et êtes $ville";
         ?>
     </p>
 </body>
