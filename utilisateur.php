@@ -1,10 +1,16 @@
 <?php
 
-    $username = $_GET["username"];
-    $genre = $_GET["genre"];
-    $age = $_GET["age"];
-    $ville = $_GET["ville"];
-    $genre = $_GET["genre"];
+    $username = "Doe";
+    if($_REQUEST['username'] != ""){
+        $username = $_REQUEST['username'];
+    }
+    $genre = "Madame";
+    if($_REQUEST['genre'] and $_REQUEST["genre"] == "homme"){
+        $genre = "Monsieur";
+    }
+    
+    $age = $_REQUEST["age"];
+    $ville = $_REQUEST["ville"];
 
 ?>
 
