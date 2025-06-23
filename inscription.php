@@ -12,19 +12,19 @@
     <form action="utilisateur.php" method="get">
         <div>
             <label for="username">Nom : </label>
-            <input id="username" type="text" placeholder="Votre nom d'utilisateur" />
+            <input id="username" name="username" type="text" placeholder="Votre nom d'utilisateur" />
         </div>
         <div>
             <label for="password">Mot de passe : </label>
-            <input id="password" type="password" placeholder="Votre mot de passe" />
+            <input id="password" name="password" type="password" placeholder="Votre mot de passe" />
         </div>
         <div>
             <label for="age">Age : </label>
-            <input id="age" type="number" placeholder="Votre âge" min=0 max=150 />
+            <input id="age" name="age" type="age" placeholder="Votre âge" min=0 max=150 />
         </div>
         <div>
             <label for="ville">Ville : </label>
-            <select id="ville">
+            <select name="ville" id="ville">
                 <option value="marseille">Marseille</option>
                 <option value="lyon">Lyon</option>
                 <option value="paris">Paris</option>
@@ -32,19 +32,12 @@
         </div>
         <div>
             <label for="remarque">Remarque : </label>
-            <textarea id="remarque" cols=50 rows=5></textarea>
+            <textarea id="remarque" name="remarque" cols=50 rows=5></textarea>
         </div>
         <div>
             Genre : 
             <input type="radio" name="genre" value="homme" /> Homme
             <input type="radio" name="genre" value="femme" /> femme
-            <input type="radio" name="genre" value="trans homme" /> Trans Homme
-            <input type="radio" name="genre" value="trans femme" /> Trans Femme
-            <input type="radio" name="genre" value="bi-genre" /> Bi genre
-            <input type="radio" name="genre" value="agenre" /> Agenre
-            <input type="radio" name="genre" value="tri-genre" /> Tri-genre
-            <input type="radio" name="genre" value="xenogenre" /> Xenogenre
-            <input type="radio" name="genre" value="Sapiogenre" /> Sapiogenre
         </div>
         <div>
             Sport préféré :
