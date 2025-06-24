@@ -1,4 +1,6 @@
 <?php
+    // Démarrer la session
+    session_start();
 
     $username = "Doe";
     if($_REQUEST['username'] != ""){
@@ -11,6 +13,8 @@
     
     $age = $_REQUEST["age"];
     $ville = $_REQUEST["ville"];
+
+    setcookie("nom", $username);
 
 ?>
 
@@ -34,5 +38,6 @@
             echo " $username , vous êtes un(e) $genre de $age ans et êtes $ville";
         ?>
     </p>
+    <a href="test.php">Consulter les cookies</a>
 </body>
 </html>
