@@ -16,6 +16,9 @@
 
     setcookie("nom", $username);
 
+    // ajouter des données dans la session
+    $_SESSION['nom'] = $username;
+
 ?>
 
 <!DOCTYPE html>
